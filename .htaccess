@@ -1,6 +1,10 @@
 #Pear
 #Created by Rixy :)
 Options +FollowSymLinks -Indexes
+#it was an hell to setup pear for the first time
+#why?
+#cause i forgot the RewriteEngine on lol
+RewriteEngine on
 ErrorDocument 404 /grp_portal-php/404.php
 RewriteRule ^$ /grp_portal-php/root.php [L,NC,QSA]
 RewriteRule ^communities$ /grp_portal-php/communities.php [L,NC,QSA]
