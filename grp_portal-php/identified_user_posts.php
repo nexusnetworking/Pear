@@ -16,6 +16,7 @@ print '<header id="header">
 print '<div class="identified-user-info info-content">
   <span class="title">Posts from Verified Users</span>
   <span class="text">Get the latest news here!</span>
+  <span class="text">totally not work, go to announcements community plz</span>
 </div>';
 
 print '<div class="body-content identified-user-page">
