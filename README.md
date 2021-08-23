@@ -3,7 +3,7 @@ Miiverse clone based off Grape source code.
 
 please don't host this as an rehost it's cringe; only use this as an development tool for contributing to pear to make it better
 # What makes it different from Grape?
-Well, it uses only the portal version of Grape (this is the best version of Grape) and makes some tweaks to it so it can be better.
+Well, it uses only the portal version of Grape (best version of Grape) and makes some tweaks to it so it can be better.
 # FAQ
 ## Do you have any plans of porting the Grape offdevice version to Pear?
 I don't have any plans for that.
