@@ -1,9 +1,9 @@
 <?php
 require_once '../grplib-php/init.php';
-//if($_SERVER['REQUEST_METHOD'] != 'POST') {
-	//include_once '404.php';
-     //exit();
-//}
+if($_SERVER['REQUEST_METHOD'] != 'POST') {
+	include_once '404.php';
+    exit();
+}
 
 if(isset($_GET['user_id'])) {
 $search_user = $mysql->query('SELECT * FROM people WHERE people.user_id = "'.(empty($_GET['user_id']) ? 'a' : $mysql->real_escape_string($_GET['user_id'])).'"'); } else {
