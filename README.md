@@ -19,7 +19,7 @@ Absolutely not.
 
 # How to install?
 ## First step
-Download & extract the latest version of Pear to you website htdocs folder or whatever it is.
+Download & extract the latest version of Pear to your website htdocs folder or whatever it is.
 ## Second step
 Create a database or use an existing one (but it needs to be empty) and import the database structure of Pear (Pear.sql) on PhpMyAdmin.
 ## Third step
