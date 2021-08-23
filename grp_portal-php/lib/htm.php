@@ -23,6 +23,7 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH']
 
 <html lang="en">
   <head>
+    <link rel="icon" href="/favicon.ico">
     <meta charset="utf-8">
 	<title>'.(isset($pagetitle) ? $pagetitle : 'grp.portal.page_title').' - Pear</title>
 	';
