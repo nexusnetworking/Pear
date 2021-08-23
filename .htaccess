@@ -4,7 +4,8 @@ Options +FollowSymLinks -Indexes
 ErrorDocument 404 /grp_portal-php/404.php
 RewriteRule ^$ /grp_portal-php/root.php [L,NC,QSA]
 RewriteRule ^communities$ /grp_portal-php/communities.php [L,NC,QSA]
-RewriteRule ^communities/favorites$ /grp_portal-php/communities-showfavorites.php [L,NC,QSA]
+RewriteRule ^communities\/favorites$ /grp_portal-php/communities-showfavorites.php [L,NC,QSA]
+RewriteRule ^communities\/categories$ /grp_portal-php/communities_categories.php [L,NC,QSA]
 RewriteRule ^my_menu$ /grp_portal-php/my_menu.php [L,NC,QSA]
 RewriteRule ^news\/my_news$ /grp_portal-php/news.php [L,NC,QSA]
 RewriteRule ^news\/friend_requests$ /grp_portal-php/friendrequests.php [L,NC,QSA]
@@ -35,6 +36,8 @@ RewriteRule ^warning\/readonly$ /grp_portal-php/content/warnings/readonly.php [L
 RewriteRule ^check_update.json$ /grp_portal-php/check_update.php [L,NC,QSA]
 RewriteRule ^users$ /grp_portal-php/user-search.php [L,NC,QSA]
 RewriteRule ^users\/@me$ /grp_portal-php/profile-me.php [L,NC,QSA]
+RewriteRule ^users\/([^\/]+).unfollow.json /grp_portal-php/users.php?user_id=$1&mode=unfollow [L,NC,QSA]
+RewriteRule ^users\/([^\/]+).follow.json /grp_portal-php/users.php?user_id=$1&mode=follow [L,NC,QSA]
 RewriteRule ^users\/([^\/]+)$ /grp_portal-php/users.php?user_id=$1 [L,NC,QSA]
 RewriteRule ^users\/([^\/]+)\/friend_request.create.json$ /grp_portal-php/friend_request.php?create&user_id=$1 [L,NC,QSA]
 RewriteRule ^users\/([^\/]+)\/([^\/]+)$ /grp_portal-php/users.php?user_id=$1&mode=$2 [L,NC,QSA]
