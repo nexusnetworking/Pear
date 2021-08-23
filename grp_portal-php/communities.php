@@ -75,7 +75,7 @@ printTitle($platformtitles);
         }
 	print '
 	</ul>
-	<a href="/communities/categories/wiiu_all" data-pjax="#body" class="more-button scroll">'.loc('grp.portal.show_more').'</a>
+	<a href="/communities/categories" data-pjax="#body" class="more-button scroll">'.loc('grp.portal.show_more').'</a>
 	';
 $get_specialtitles = $mysql->query('SELECT * FROM titles WHERE titles.platform_id IS NULL AND titles.hidden != 1 ORDER BY titles.created_at DESC LIMIT 6');
 print '<h2 class="headline headline-special">'.loc('grp.portal.special_headline').'</h2>

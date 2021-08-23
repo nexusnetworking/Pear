@@ -442,9 +442,8 @@ if($search_relationship->num_rows != 0) {
 jsonErr(400); 
 }
 
-
 // User checks over. Is eligible to follow.
-        $create_relationship = $mysql->query('INSERT INTO grape.relationships(source, target) VALUES ("'.$_SESSION['pid'].'", "'.$user['pid'].'")');
+        $create_relationship = $mysql->query('INSERT INTO relationships(source, target) VALUES ("'.$_SESSION['pid'].'", "'.$user['pid'].'")');
 
 sendNews($_SESSION['pid'], $user['pid'], 6, null);
         if(!$create_relationship) {
@@ -459,8 +458,8 @@ json_encode(array('success' => 1, 'can_follow_more' => true));
 		    exit();
 }
 if(isset($_GET['mode']) && $_GET['mode'] == 'unfollow') {
-if($_SERVER['REQUEST_METHOD'] != 'POST') {
-include_once '404.php'; }
+//if($_SERVER['REQUEST_METHOD'] != 'POST') {
+//include_once '404.php'; }
 
 if($search_user->num_rows == 0) { jsonErr(404); }
 
