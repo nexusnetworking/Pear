@@ -1,9 +1,9 @@
 <?php
 require_once '../grplib-php/init.php';
-if($_SERVER['REQUEST_METHOD'] != 'POST') {
-	include_once '404.php';
-     exit();
-}
+//if($_SERVER['REQUEST_METHOD'] != 'POST') {
+	//include_once '404.php';
+     //exit();
+//}
 
 
 $search_user = prepared('SELECT pid FROM people WHERE people.user_id = ?', [$_GET['user_id'] ?? null]);

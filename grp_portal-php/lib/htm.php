@@ -144,7 +144,7 @@ $lookup_user = $mysql->query('SELECT * FROM people WHERE people.pid = "'.$_SESSI
       <li id="global-menu-community"><a href="/communities" data-pjax="#body" data-sound="SE_WAVE_MENU">'.loc('grp.portal.community').'</a></li>
       <li id="global-menu-message"><a href="/friend_messages" data-pjax="#body" data-sound="SE_WAVE_MENU">'.loc('grp.portal.message').'<span class="badge" style="display: none;">0</span></a></li>
       <li id="global-menu-news"><a href="/news/my_news" data-pjax="#body" data-sound="SE_WAVE_MENU">'.loc('grp.portal.news').'<span class="badge" style="display: none;">0</span></a></li>
-      <li id="global-menu-exit"><a href="#" role="button" data-sound="SE_WAVE_EXIT">'.loc('grp.portal.exit').'</a></li>
+      <li id="global-menu-exit"><a href="http://google.com" data-sound="SE_WAVE_EXIT">'.loc('grp.portal.exit').'</a></li>
       <li id="global-menu-back" class="none"><a href="#" role="button" class="accesskey-B" data-sound="SE_WAVE_BACK">'.loc('grp.portal.back').'</a></li>
     </menu>
 '; } else {
@@ -155,7 +155,7 @@ $lookup_user = $mysql->query('SELECT * FROM people WHERE people.pid = "'.$_SESSI
       <li id="global-menu-community"><a href="/communities" data-pjax="#body" data-sound="SE_WAVE_MENU">'.loc('grp.portal.community').'</a></li>
       <li id="global-menu-message"><a href="javascript:alert(\'An account is required to use this feature. Create one in Guest Menu.\');" data-pjax="#body" data-sound="SE_WAVE_MENU">'.loc('grp.portal.message').'<span class="badge" style="display: none;">0</span></a></li>
       <li id="global-menu-news"><a href="javascript:alert(\'An account is required to use this feature. Create one in Guest Menu.\');" data-pjax="#body" data-sound="SE_WAVE_MENU">'.loc('grp.portal.news').'<span class="badge" style="display: none;">0</span></a></li>
-      <li id="global-menu-exit"><a href="#" role="button" data-sound="SE_WAVE_EXIT">'.loc('grp.portal.exit').'</a></li>
+      <li id="global-menu-exit"><a href="http://google.com" data-sound="SE_WAVE_EXIT">'.loc('grp.portal.exit').'</a></li>
       <li id="global-menu-back" class="none"><a href="#" role="button" class="accesskey-B" data-sound="SE_WAVE_BACK">'.loc('grp.portal.back').'</a></li>
     </menu>
 ';
