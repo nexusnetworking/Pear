@@ -7,7 +7,7 @@ setcookie( "grp_theme", htmlspecialchars($_GET['theme']), strtotime('+10 days') 
 }
 
 else {
-setcookie( "grp_theme", 'olive', strtotime('+10 days') );
+setcookie( "grp_theme", 'pear', strtotime('+10 days') );
 }
     header("Location: ".(!empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '/communities'));
 }

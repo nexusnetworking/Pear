@@ -16,7 +16,7 @@ print '<header id="header">
     <a class="dropdown-toggle" data-toggle="dropdown" data-sound="SE_WAVE_BALLOON_OPEN" href="#">'.loc('grp.portal.theme').(isset($_COOKIE['grp_theme']) ? htmlspecialchars($_COOKIE['grp_theme']) : 'olive').'</a>
     <ul class="dropdown-menu">
       <li>
-        <a href="/theme-set?theme=olive" class="button checkbox-button'.(!isset($_COOKIE['grp_theme']) || $_COOKIE['grp_theme'] == 'olive' ? ' selected' : '').'" data-sound="SE_WAVE_TOGGLE_CHECK">olive</a>
+        <a href="/theme-set?theme=pear" class="button checkbox-button'.(!isset($_COOKIE['grp_theme']) || $_COOKIE['grp_theme'] == 'pear' ? ' selected' : '').'" data-sound="SE_WAVE_TOGGLE_CHECK">pear</a>
       </li>
       <li>
         <a href="/theme-set?theme=grape" class="button checkbox-button'.(isset($_COOKIE['grp_theme']) && $_COOKIE['grp_theme'] == 'grape' ? ' selected' : '').'" data-sound="SE_WAVE_TOGGLE_CHECK">grape</a>

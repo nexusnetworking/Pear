@@ -24,7 +24,6 @@ $act_back_location = '/communities';
 <h2>Community Form</h2><br>Name (255 characters): <input class="textbox" name="community.name" minlength="10" maxlength="255" type="text"><br>
 Description (2200 characters): <textarea type="text" name="community.description" maxlength="2200" class="textarea"></textarea><br>Icon: (Square icon, PNG/JPG): <input class="textbox" name="community.icon" maxlength="255" type="text"><br>Banner: (1280x180, PNG/JPG): <input class="textbox" name="community.banner" maxlength="255" type="text"><br>3DS banner: (400x168, PNG/JPG): <input class="textbox" name="community.banner_3ds" maxlength="255" type="text"><br>
  		<input type="submit" value="Create" class="btn_001">
-
  	 
 </form>    </div>';
         actTemplate($act_template_subheader, $act_back_location, $act_content);
@@ -53,5 +52,3 @@ Description (2200 characters): <textarea type="text" name="community.description
 		}
 	}
 }
-
-
